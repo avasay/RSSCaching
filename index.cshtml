@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>RSS Caching</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+    $(document).ready(function () {
+        $("#submit").on('click', function (e) {         
+            $("#myiFrame").attr("src", "https://localhost:44306/Handler.ashx"); 
+        });
+    });
+    </script>
+</head>
+<body>
+    <h2>Seeking Alpha Feed</h2>
+
+    <button id="submit">Get Feed</button>
+    <p></p>
+    <iframe id="myiFrame" src="about:blank" width="720" height="480">
+    </iframe>
+
+</body>
+</html>
